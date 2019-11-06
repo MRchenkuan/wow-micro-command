@@ -1,7 +1,11 @@
+#showtooltip 拳击
+/CAST [stance:3] 拳击; 狂暴姿态
+
 #showtooltip 冲锋
-/CAST  [stance:1]  冲锋; 战斗姿态
-/CAST  [stance:1] 断筋
-/equip [stance:1] 溢血者
+/CAST [stance:1] 断筋
+/CAST [stance:1]  冲锋; 战斗姿态
+/equipslot [stance:1]16 猛虎之无双战斧
+/attack
 
 #showtooltip 缴械
 /CAST  [stance:2]  缴械; 防御姿态
@@ -13,19 +17,19 @@
 /CAST  [stance:1]  惩戒痛击; 战斗姿态
 
 #showtooltip 拦截
-/CAST [stance:3]  拦截; 狂暴姿态
 /CAST [stance:3] 断筋
-/equip [stance:3] 溢血者
+/CAST [stance:3]  拦截; 狂暴姿态
+/equipslot [stance:3]16 猛虎之无双战斧
+/startattack
 
 #showtooltip 压制
 /CAST [stance:1] 压制; 战斗姿态
-/cast [stance:1] 英勇打击
 
 #showtooltip 横扫攻击
-/CAST [stance:1] 横扫攻击; 战斗姿态
+/CAST  [stance:1]  横扫攻击; 战斗姿态
 
-#showtooltip 嘲讽
-/CAST [stance:2] 嘲讽; 防御姿态
+#showtooltip 鲁莽
+/CAST [stance:3]  鲁莽; 狂暴姿态
 
 #showtooltip 撕裂
 /CAST [stance:1/2] 撕裂; 战斗姿态
@@ -34,25 +38,35 @@
 /CAST [stance:1/3] 斩杀; 狂暴姿态
 
 #showtooltip 雷霆一击
-/CAST [stance:1] 雷霆一击; 战斗姿态
-
-#showtooltip 复仇
-/CAST [stance:2] 复仇; 防御姿态
+/CAST  [stance:1]  雷霆一击; 战斗姿态
 
 #showtooltip 盾墙
 /stopcasting
-/equip [stance:2] 主将之盾
+/equip [stance:2] 吉兹洛克的高科技圆盾
 /cast [stance:2][equipped:盾牌] 盾墙
 /cast [nostance:2] 防御姿态
 
-#showtooltip 盾击
+#showtooltip 复仇
+/CAST  [stance:2]  复仇; 防御姿态
+
+#showtooltip [stance:3] 拳击; [nostance:3, equipped:盾牌] 盾击; [nostance:3, noequipped:盾牌] 拳击
 /stopcasting
-/equip [stance:1/2] 主将之盾
-/cast [stance:1/2][equipped:盾牌] 盾击
-/cast [nostance:1/2] 防御姿态
+/cast [stance:3] 拳击
+/cast [nostance:3, equipped:盾牌] 盾击
+/cast [nostance:3, noequipped:盾牌] 狂暴姿态
+/cast [nostance:3, noequipped:盾牌] 拳击
+
+#showtooltip 旋风斩
+/equipslot [stance:3]16 猛虎之无双战斧
+/CAST [stance:3] 旋风斩; 狂暴姿态
+
+#showtooltip 狂暴之怒
+/CAST [stance:3] 狂暴之怒; 狂暴姿态
 
 #showtooltip 盾牌格挡
 /stopcasting
-/equip [stance:2] 主将之盾
+/equipslot [stance:2]16 半藏之剑
+/equipslot [stance:2]17 吉兹洛克的高科技圆盾
 /cast [stance:2][equipped:盾牌] 盾牌格挡
 /cast [nostance:2] 防御姿态
+
